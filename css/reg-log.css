@@ -1,0 +1,222 @@
+/*头部*/
+#Header{
+		width:1000px;
+		height:100px;
+		margin:0 auto;
+}
+#Header .header_img1{
+		margin-right:220px;
+		margin-bottom:18px;
+}
+
+/*body*/
+/*左侧*/
+#zhuce-banner{
+		background-image:url();
+		background-color:#f8f8f8;
+		border-top:1px solid #e8e8ea;
+		border-bottom:1px solid #e8e8ea;
+}
+#zhuce-body{
+		width:1000px;
+		height:400px;
+		margin:0 auto;
+		margin-top:200px;
+}
+/*右侧输入框*/
+/*注册*/
+.register{
+		width:350px;
+		height:364px;
+		border:1px solid #e8e8ea;
+		margin-top:-70px;
+		margin-left:90px;
+}
+.reg_float{
+		float:left;
+}
+.reg_float1{
+		margin-right:90px;
+}
+.reg-header{
+		width:350px;
+		height:53px;
+		border-bottom:1px solid #ddd;
+}
+.reg-header-s1{
+		font-size:16px;
+		line-height:52px;
+		font-weight:700;
+		color:#e31436;
+		margin-left:40px;
+}
+.reg-header-s2{
+		font-size:12px;
+		margin-left:100px;
+}
+.reg-header-s2 a{
+		color:#51b8f1;
+}
+.reg-body{
+		width:350px;
+		height:310px;
+		background-color:white;
+		text-align:center;
+		color:#bdbdbd;
+}
+.input-box{
+		width:270px;
+		height:36px;
+		border:1px solid #c5cddb;
+		font-size:14px;
+		background:url(../image/zhuce/6315f6c8-5227-4ca5-9e45-e21557db8eb5_84_125.png) -25px -25px;
+		background-repeat:no-repeat;
+		border:1px solid #eaeaea;
+		margin:15px 40px;
+		border-radius:2px;
+}
+.input-box-tel{
+		margin-top:35px;
+}
+.input-box input{
+		width:180px;
+		height:30px;
+		border:0;
+		margin-left:-15px;
+		margin-top:3px;
+		outline:none;
+}
+.input-box-yzm{
+		background:url();
+}
+.input-box-yzm input{
+		width:138px;
+		height:30px;
+}
+.input-box-yzm div{
+		width:97px;
+		height:38px;
+		float:right;
+		line-height:34px;
+		margin-top:-1px;
+		border:0;
+		background-color:#eee;
+		border-left:1px solid #d5d5d5;
+}
+.input-box-yzm a{
+		color:#333;
+}
+.input-box-mm{
+		background:url(../image/zhuce/6315f6c8-5227-4ca5-9e45-e21557db8eb5_84_125.png) -56px -25px;
+		background-repeat:no-repeat;
+}
+.reg-body button{
+		width:270px;
+		height:36px;
+		background-color:#E31436;
+		color:white;
+		border:0;
+		border-radius:4px;
+		margin:20px 0;
+}
+.input-box-igree{
+		font-size:14px;
+		
+}
+.input-box-igree a{
+		color:#bdbdbd;
+}
+/*登录*/
+.login-body{
+		width:350px;
+		height:268px;
+}
+.login-body button{
+		margin:10px 0;	
+}
+.reg-header-login>a{
+		color:#e31436;
+}
+.reg-header-emlogin>a{
+		color:#333;
+}
+.reg-header-emlogin{
+		margin-left:100px;
+}
+.register-login{
+		border:1px solid #e8e8ea;
+		margin-top:-366px;
+		margin-left:580px;
+		display:none;
+}
+#a-login{
+		width:270px;
+		height:18px;
+		font-size:12px;
+		background:url(../image/zhuce/6315f6c8-5227-4ca5-9e45-e21557db8eb5_84_125.png) 70px 2px;
+		background-repeat:no-repeat;
+		float:right;
+		margin-right:-50px;
+		margin-top:10px;
+}
+#a-login>a{
+		color:#666;		
+}
+.input-box-igree>span{
+		margin-right:90px;
+}
+.input-box-igree>p{
+		margin-top:10px;
+}
+.input-box-igree>p>a{
+		text-decoration:underline;
+}
+/*登录底部*/
+.login-bottom{
+		width:350px;
+		height:41px;
+		border-top:1px solid #e8e8e8;
+}
+.w-icon{
+		background:url(../image/zhuce/icon1 (1).png) -500px -300px;
+}
+
+ /*底部*/
+  #down{
+		height:155px;
+		background:white;
+ }
+ 
+ #lower{
+		 height:153px;
+		 width:1098px;
+		 margin:0 auto;
+		 border:1px solid white;
+		 color:#666;
+		 font-size:12px;
+		 text-align:center;
+}
+.down-t1{
+		 width:80px;
+		 height:30px;
+		 margin-right:10px;
+}
+.down-t2{
+		 width:30px;
+		 height:30px;
+}
+.lower-1{
+		 line-height:26px;
+}
+.lower2{
+		 margin-top:20px;
+}
+   .di{
+		 margin-top:5px;
+}
+.lower3{
+		 margin-right:20px;
+}
+.downtu{
+		 vertical-align:middle;
+}

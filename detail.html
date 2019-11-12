@@ -1,0 +1,2476 @@
+<!doctype html>
+<html>
+	<head>
+		<title>商品详情</title>
+		<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/commen.css">
+	<link rel="stylesheet" href="css/detail.css">
+	<script src="js/vue.js"></script> 
+	</head>
+	<body>
+	<!--1.导航-->
+ <div id="daohang">
+       <div id="dh">
+	        <span class="dh1">考拉欢迎你！</span>
+			<span class="dh1"><a class="mrqd" href="">登录</a></span>
+			<span class="dh1"><a class="mrqd" href="">免费注册</a></span>
+			<span class="dh1 dh2"><a class="mrqd" href="">手机考拉</a></span>
+	   </div>
+	   <ul id="dhu">
+	   	<li class="dhl1 dhqiandao"><a class="mrqd" href="">每日签到</a></li>
+	   	<li class="dhl1"><a class="mrqd" href="">我的订单</a></li>
+	   	<li class="dhl1 dhl2">
+			个人中心
+			<img class="dht" src="image/index/header_normal.png">
+			<ul class="dhcenter">
+			    <li class="dhcenter-1"><a href="">我的优惠券</a></li>
+			    <li class="dhcenter-1"><a href="">我的红包</a></li>
+			    <li class="dhcenter-1"><a href="">我的考拉豆</a></li>
+			    <li class="dhcenter-1"><a href="">账号管理</a></li>
+			    <li class="dhcenter-1"><a href="">我的实名认证</a></li>
+			    <li class="dhcenter-1"><a href="">我的发票抬头</a></li>
+			    <li class="dhcenter-1"><a href="">我收藏的商品</a></li>
+			    <li class="dhcenter-1"><a href="">我关注的品牌</a></li>
+			    <li class="dhcenter-1"><a href="">售后管理</a></li>
+			</ul>
+		</li>
+	   	<li class="dhl1 dhl2">
+			客户服务
+			<img class="dht" src="image/index/header_normal.png">
+			<ul class="dhcenter dhhelp">
+			    <li class="dhcenter-1"><a href="">联系客服</a></li>
+			    <li class="dhcenter-1"><a href="">帮助中心</a></li>
+			    <li class="dhcenter-1"><a href="">知识产权保护</a></li>
+			    <li class="dhcenter-1"><a href="">规则中心</a></li>
+			</ul>
+		</li>
+	   	<li class="dhl1 dhl2">
+			充值中心
+			<img class="dht" src="image/index/header_normal.png">
+			<ul class="dhcenter dhchongzhi">
+			    <li class="dhcenter-1"><a href="">话费流量</a></li>
+			    <li class="dhcenter-1"><a href="">游戏充值</a></li>
+			    <li class="dhcenter-1"><a href="">AppStore充值卡</a></li>
+			</ul>
+		</li>
+	   	<li class="dhl1 dhl2 dhl3">
+			 消费者权益
+			<img class="dht" src="image/index/header_normal.png">
+			<ul class="dhcenter dhquanyi">
+			    <li class="dhcenter-1"><a href="">消费者告知书</a></li>
+			    <li class="dhcenter-1"><a href="">消费投诉公示</a></li>
+			</ul>
+		</li>
+	   	<li class="dhl1 dhl2">
+			更多
+			<img class="dht" src="image/index/header_normal.png">
+			<ul class="dhcenter dhgengduo">
+			    <li class="dhcenter-1"><a href="">收藏本站</a></li>
+			    <li class="dhcenter-1"><a href="">新浪微博</a></li>
+			    <li class="dhcenter-1"><a href="">微信公众号</a></li>
+			    <li class="dhcenter-1"><a href="">易信公众号</a></li>
+			    <li class="dhcenter-1"><a href="">招商合作</a></li>
+			    <li class="dhcenter-1"><a href="">考拉招聘</a></li>
+			</ul>
+		</li>
+	   </ul>
+ </div>
+
+<!--2.logo-->
+<div id="logo">
+     <div id="kaola">
+	      <a href="index.html">
+			<img src="image/index/70dee793-133d-4628-b374-b99e29aad157.png">
+		  </a>
+	 </div>
+	 <input id="topsearch" type="text" placeholder="  艾维诺沐浴露">
+	 <a href="">
+		<button id="sousuok">
+			<img src="image/index/6e4da089-9347-4dc2-be19-4962832a4a5c.png">
+		</button>
+	 </a>
+	 <a href="">
+		<button id="lgshopcar">
+		    <img class="lgcartu" src="image/index/14f1eb69-f7c0-4d4f-95d8-4aee8e2e1f1b.png">
+			购物车
+		</button>
+	 </a>
+	 <ul>
+	 	<li class="lg-l1">面膜</li>
+	 	<li class="lg-l1">口红</li>
+	 	<li class="lg-l1">减肥</li>
+	 	<li class="lg-l1 zdh-red">全球工厂店</li>
+	 	<li class="lg-l1">运动鞋</li>
+	 	<li class="lg-l1">项链</li>
+	 	<li class="lg-l1">女包</li>
+	 </ul>
+</div>
+
+<!--3.内容导航-->
+<div id="nrdaohang">
+     <ul>
+     	<li class="nrdh"><a href="">首页</a></li>
+     	<li class="nrdh"><a href="">今日限时购</a></li>
+     	<li class="nrdh"><a href="">每日上新</a></li>
+     	<li class="nrdh"><a href="">国家馆</a></li>
+     	<li class="nrdh"><a href="">海外旗舰店</a></li>
+     	<li class="nrdh"><a href="">工厂店</a></li>
+     	<li class="nrdh"><a href="">品质奶粉</a></li>
+     	<li class="nrdh"><a href="">人气面膜</a></li>
+     	<li class="nrdh"><a href="">礼品卡</a></li>
+     </ul>
+</div>
+<hr class="ctn-top-hr">
+
+<!--4.左边导航栏-->
+<div>
+     <ul id="zdhfu">
+     	<li class="zdhl1 qingchu">
+		    <div class="zdhl1-1">
+				<i class="i1 i2"></i>
+				<i class="i1"></i>
+				<i class="i1"></i>
+			</div>
+			<span class="zdhl1-1">
+				所有分类
+			</span>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9magj32_40_40.png">
+			美容彩妆<span class="zdhs1">></span>
+			<!--美容彩妆表-->
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">护肤</span>
+						<span class="zdhdh-1">面膜</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">
+						    <span class="zdh-red">洁面</span>
+							<span>卸妆</span>
+							<span class="zdh-red">爽肤水</span>
+							<span class="zdh-red">面霜</span>
+							<span>眼部护理</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span class="zdh-red">精华</span>
+							<span class="zdh-red">乳液/凝胶</span>
+							<span>手/足护理</span>
+							<span>身体护理</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>唇部护理</span>
+							<span class="zdh-red">护肤套装</span>
+							<span>精油芳疗</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>面部护肤</span> 
+							<span class="zdh-red">男士护肤</span>
+						</div>
+					</div>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">
+						    <span class="zdh-red">美迪惠尔</span>    
+							<span>JMsolution</span>
+							<span class="zdh-red">RAY</span>
+							<span>Dr.Jart+</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>JAYJUN</span>     
+							<span>春雨</span>
+							<span>SNP</span>
+							<span class="zdh-red">佑天兰</span>
+							<span>香蒲丽</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>森田药妆</span>   
+							<span>肌美精</span>
+							<span>丽得姿</span>
+							<span>其他面膜</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">彩妆</span>
+						<span class="zdhdh-1">防晒修复</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">
+						    <span class="zdh-red">BB霜/CC霜</span>
+							<span>唇膏/唇彩</span>
+							<span>隔离/妆前</span>
+							<span>粉底</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>粉饼/散粉</span>
+							<span class="zdh-red">美甲</span>
+							<span class="zdh-red">眼线</span>
+							<span>眉笔</span>
+							<span class="zdh-red">睫毛膏</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>眼影</span>
+							<span>腮红</span>
+							<span>遮瑕</span>
+							<span>高光/修颜</span>
+							<span class="zdh-red">香水</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>化妆工具</span> 
+							<span>彩妆工具</span>
+						</div>
+					</div>
+					<div class="zdhxq1 zdhxq2">
+					    <div class="zdhd0-0">         
+						    <span>安耐晒</span>    
+							<span>娜丽丝</span>
+							<span>RE:CIPE</span>
+							<span>碧柔</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span class="zdh-red">水宝宝</span>     
+							<span>香蕉船</span>
+							<span>Ultrasun</span>
+							<span>苏菲娜</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>高丝</span>   
+							<span>其他防晒</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">香水/香氛</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+						<div class="zdhd0-0">
+							<span class="zdh-red">女士香水</span>   
+							<span>男士香水</span>
+							<span>香水套装</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/ieft86iu85_120_120.jpg">
+					<img class="zdhimg" src="image/index/idvqc2kv42.jpg">
+					<img class="zdhimg" src="image/index/1btlvtbrr35_300_300.jpg">
+					<img class="zdhimg" src="image/index/ii71no6h49_120_120.jpg">
+					<img class="zdhimg" src="image/index/idv0dp6a35.jpg">
+					<img class="zdhimg" src="image/index/igats98t62_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/iqmf9t6y71_244_100 (1).jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9lmhg85_40_40.png">
+			母婴儿童<span class="zdhs1">></span>
+			<!--母婴儿童表-->
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">奶粉  </span>
+						<span class="zdhdh-1 zdhdh-2">纸尿裤/拉拉裤</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">爱他美</span>
+							<span class="zdh-red">牛栏</span>
+							<span class="zdh-red">a2</span>
+							<span class="zdh-red">喜宝</span>
+							<span class="zdh-red">贝拉米</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span class="zdh-red">惠氏</span>
+							<span class="zdh-red">美素佳儿</span>
+							<span>Hero</span>
+							<span>Baby</span>
+							<span>美林</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span class="zdh-red">雅培</span>
+							<span>美赞臣</span>
+							<span>贝儿</span>
+							<span>雀巢</span>
+							<span class="zdh-red">合生元</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>满趣健</span> 
+							<span class="zdh-red">Pre段</span>
+							<span class="zdh-red">1段</span>
+							<span class="zdh-red">2段</span>
+							<span>3段</span>  
+						</div>
+						<div class="zdhd0-0">     
+						    <span>5段（2+）</span>
+							<span>4段（1+）</span>
+							<span>6段</span>
+						</div>
+					</div>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">花王</span>    
+							<span class="zdh-red">尤妮佳</span>
+							<span class="zdh-red">大王</span>
+							<span class="zdh-red">好奇</span>
+							<span>帮宝适</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>妈咪宝贝</span>     
+							<span>班博</span>
+							<span>丽贝乐</span>
+							<span>妮飘</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>姆明一族</span>   
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">营养辅食</span>
+						<span class="zdhdh-1 baobao">宝宝用品/玩具图书</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">辅食泥</span>
+							<span class="zdh-red">米粉米糊</span>
+							<span class="zdh-red">泡芙</span>
+							<span>溶溶豆</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>营养品</span>
+							<span>饼干</span>
+							<span>肉松面仔</span>
+							<span>调味品</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>其他辅食</span>
+							<span>其他零食</span>
+						</div>
+					</div>
+					<div class="zdhxq1 zdhxq3">           
+					    <div class="zdhd0-0">         
+						    <span class="zdh-red">洗漱护肤</span>    
+							<span class="zdh-red">护理</span>
+							<span class="zdh-red">喂养</span>
+							<span>出行</span>
+							<span>清洁消毒</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>图书绘本</span>     
+							<span>积木拼插</span>
+							<span>早教益智</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>爬行学步</span>   
+							<span>其他玩具</span>
+							<span>宝宝家居</span>
+							<span>小家电</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">童装童鞋</span>
+						<span class="zdhdh-1 baobao">孕妈必备</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span class="zdh-red">连体爬服</span>   
+							<span class="zdh-red">宝宝套装/衬衫/T恤</span>
+							<span>宝宝裤子</span>
+						</div>
+					</div>
+					<div class="zdhxq1 zdhxq4">
+						<div class="zdhd0-0">      
+							<span class="zdh-red">孕妈洗护</span>   
+							<span>孕期营养</span>
+							<span>产前产后用品</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/1buq5o77461_300_300.jpg">
+					<img class="zdhimg" src="image/index/ig1o83dv34_120_120.jpg">
+					<img class="zdhimg" src="image/index/j1ls2t8t6_300_300.jpg">
+					<img class="zdhimg" src="image/index/ig1plpsc89_120_120.jpg">
+					<img class="zdhimg" src="image/index/1cjlacf0u30_120_120.jpg">
+					<img class="zdhimg" src="image/index/iifru49i25_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/iqmf9m9p59_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9no5t81_40_40.png">
+			营养保健<span class="zdhs1">></span>
+			<!--营养保健表-->
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">女性健康</span>
+						<span class="zdhdh-1 bibei">男士必备</span>
+					</div>
+					<hr>    
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">胶原蛋白</span>
+							<span class="zdh-red">葡萄籽</span>
+							<span class="zdh-red">白藜芦醇</span>
+							<span class="zdh-red">酵素</span>
+						</div>
+						<div class="zdhd0-0">       
+						    <span>铁元</span>
+							<span class="zdh-red">蔓越莓</span>
+							<span class="zdh-red">美白丸</span>
+							<span>维生素C</span>
+						</div>
+						<div class="zdhd0-0">        
+						    <span>维生素E</span>
+							<span>燕窝</span>
+							<span>复合维矿</span>
+							<span class="zdh-red">早更年期 </span>
+						</div>
+						<div class="zdhd0-0">       
+						    <span>孕产营养</span> 
+							<span>美容养颜</span>
+							<span class="zdh-red">减肥瘦身</span> 
+						</div>
+						<div class="zdhd0-0">     
+						    <span>排毒通便</span>
+							<span class="zdh-red">补血补气</span>
+							<span class="zdh-red">调节内分泌</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>提高免疫力</span>
+						</div>
+					</div>
+					<div class="zdhxq1 zengjifen">
+					    <div class="zdhd0-0">         
+						    <span>增肌粉</span>    
+							<span>番茄红素</span>
+							<span class="zdh-red">玛咖</span>
+							<span class="zdh-red">护肝片</span>
+						</div>
+						<div class="zdhd0-0">       
+						    <span class="zdh-red">叶黄素</span>     
+							<span>复合维矿</span>
+							<span>提高精力</span>
+							<span class="zdh-red">缓解疲劳</span>
+						</div>
+						<div class="zdhd0-0">   
+						    <span>解酒护肝</span>
+							<span>改善视力</span>
+							<span>舒缓压力</span>
+						</div>
+						<div class="zdhd0-0">      
+						    <span class="zdh-red">男士备孕</span>
+							<span>关节养护</span>
+							<span>清肺润喉</span>
+						</div>
+						<div class="zdhd0-0">      
+						    <span class="zdh-red">护发防脱</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">关爱爸妈</span>
+						<span class="zdhdh-1 baobao">滋补养生</span>
+					</div>
+					<hr>
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">         
+						    <span class="zdh-red">钙片</span>
+							<span class="zdh-red">维骨力</span>
+							<span class="zdh-red">鱼油/卵磷脂</span>
+							<span>辅酶Q10</span>
+						</div>
+						<div class="zdhd0-0">       
+						    <span class="zdh-red">参类滋补</span>
+							<span>银杏</span>
+							<span>蛋白粉</span>
+							<span>蜂胶</span>
+						</div>
+						<div class="zdhd0-0">  
+						    <span class="zdh-red">血脂血压</span>
+							<span class="zdh-red">改善睡眠</span>
+						</div>
+					</div>
+					<div class="zdhxq1">           
+					    <div class="zdhd0-0">             
+						    <span class="zdh-red">参类</span>    
+							<span class="zdh-red">蜂蜜</span>
+							<span>黑糖/红糖</span>
+							<span class="zdh-red">养生茶</span>
+						</div>          
+						<div class="zdhd0-0">
+						    <span>灵芝/石斛</span>     
+							<span>滋补膏方</span>
+							<span class="zdh-red">燕窝</span>
+							<span>枸杞/黑枸杞</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>阿胶</span>   
+							<span>润肺养胃</span>
+							<span>补肾明目</span>
+							<span>美容养颜</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>提神醒脑</span>   
+							<span>滋阴调胃</span>
+							<span>补血调经</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/1bteeon4j97_120_120.jpg">
+					<img class="zdhimg" src="image/index/1ceqdbo4i20_120_120.jpg">
+					<img class="zdhimg" src="image/index/id59v9wn8.jpg">
+					<img class="zdhimg" src="image/index/ii7ckoej83_120_120.jpg">
+					<img class="zdhimg" src="image/index/ii7faa9k34_120_120.jpg">
+					<img class="zdhimg" src="image/index/ifzfvi7613_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/iqrh4xrm15_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9ogop45_40_40.png">
+			<!--数码家电表-->
+			数码家电<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">手机/配件</span>
+						<span class="zdhdh-1 zhineng">智能影音</span>
+					</div>
+					<hr>        
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">苹果</span>
+							<span class="zdh-red">华为</span>
+							<span>小米</span>
+							<span class="zdh-red">OPPO</span>
+							<span>vivo</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>三星</span>
+							<span>数据线</span>
+							<span>手机壳</span>
+							<span>手机贴膜</span>
+						</div>         
+					</div>
+					<div class="zdhxq1 beats">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">Beats</span>
+							<span class="zdh-red">BOSE</span>
+							<span class="zdh-red">JBL</span>
+							<span class="zdh-red">耳机/耳麦</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>音箱/音响</span> 
+							<span>微单</span>
+							<span>拍立得</span>
+							<span>智能设备</span> 
+						</div>
+						<div class="zdhd0-0">     
+						    <span class="zdh-red">小米</span>
+							<span class="zdh-red">儿童手表</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">生活电器</span>
+						<span class="zdhdh-1 bibei">个护健康</span>
+					</div>
+					<hr>        
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">戴森</span>
+							<span>电风扇</span>
+							<span>除湿机</span>
+							<span class="zdh-red">空气净化器</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span class="zdh-red">扫地机器人</span>
+							<span>吸尘器/除螨</span>
+							<span>加湿器</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>挂烫机/电熨斗</span>
+							<span>洗衣机</span>
+						</div>
+					</div>        
+					<div class="zdhxq1 zengjifen">           
+					    <div class="zdhd0-0">         
+						    <span class="zdh-red">电吹风/风筒</span>    
+							<span class="zdh-red">电动牙刷</span>
+							<span class="zdh-red">剃须刀</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>卷/直发器</span>     
+							<span>剃/脱毛器</span>
+							<span>鼻毛修剪器</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>理发器</span>   
+							<span>按摩梳</span>
+							<span class="zdh-red">按摩仪</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">厨房电器</span>
+						<span class="zdhdh-1 bibei">办公/外设</span>
+					</div>
+					<hr>        
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span class="zdh-red">电水壶/热水瓶/饮水机</span>   
+							<span class="zdh-red">咖啡机/咖啡壶</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>原汁机/榨汁机</span>   
+							<span class="zdh-red">电饭煲</span>
+							<span>搅拌/料理机</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>面包机</span>   
+							<span>净水器</span>
+							<span>电压力锅</span>
+							<span>烤箱</span>
+						</div>
+					</div>            
+					<div class="zdhxq1 zengjifen">
+						<div class="zdhd0-0">      
+							<span class="zdh-red">电脑/平板电脑</span>   
+							<span class="zdh-red">凌美</span>
+							<span class="zdh-red">kindle</span>
+							<span class="zdh-red">笔类</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span class="zdh-red">智能手表</span>   
+							<span>电子书</span>
+							<span class="zdh-red">照片打印机</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>办公文具</span>   
+							<span>键盘</span>
+							<span>本册</span>
+							<span>鼠标</span>
+							<span>投影机</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/1c0lu1vo874_120_120.jpg">
+					<img class="zdhimg" src="image/index/idk08yv746.jpg">
+					<img class="zdhimg" src="image/index/icc0dxd356.jpg">
+					<img class="zdhimg" src="image/index/ii75na3t23_120_120.jpg">
+					<img class="zdhimg" src="image/index/id2g028o49.jpg">
+					<img class="zdhimg" src="image/index/ibosun6p96.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/iqmfbnlc90_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9n9g361_40_40.png">
+			<!--个人洗护表-->
+			个人洗护<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">洗发护发</span>
+						<span class="zdhdh-1 shenti">身体护理</span>
+					</div>
+					<hr>                 
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>其他头发护理</span>
+							<span>头发造型</span>
+							<span>美发护发工具</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>洗发皂</span>
+							<span>梳子</span>
+							<span>护发精油</span>
+							<span>染发剂/膏</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>洗护发套装</span>
+							<span>发膜</span>
+							<span>护发素</span>
+							<span>洗发水</span>
+						</div>     
+					</div>
+					<div class="zdhxq1 zubu">
+					    <div class="zdhd0-0">        
+						    <span>足部护理</span>
+							<span>手部护理</span>
+							<span>身体护理</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>沐浴清洁</span>  
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">口腔护理</span>
+						<span class="zdhdh-1 bibei">女性护理</span>
+					</div>
+					<hr>               
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>其他口腔护理</span>
+							<span>凝胶</span>
+							<span>牙线/牙线棒</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>牙粉/牙素</span>
+							<span>口腔护理套装</span>
+							<span>漱口水</span>
+							<span>牙刷</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>牙膏</span>
+						</div>
+					</div>        
+					<div class="zdhxq1 huli">           
+					    <div class="zdhd0-0">             
+						    <span>其他女性护理</span>    
+							<span>私密洗液</span>
+							<span>卫生棉条</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>护垫</span>     
+							<span>卫生巾</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">成人健康</span>
+						<span class="zdhdh-1 bibei">宠物生活</span>
+					</div>
+					<hr>                
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span>暖贴</span>   
+							<span>口罩</span>
+							<span>眼罩</span>   
+							<span>其他成人用品</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>女用器具</span>   
+							<span>男用器具</span>
+							<span>情趣玩具</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>人体润滑</span>   
+							<span>避孕套</span>
+						</div>
+					</div>            
+					<div class="zdhxq1 chongwu">
+						<div class="zdhd0-0">           
+							<span>宠物医疗保健</span>   
+							<span>宠物日用品</span>
+							<span>宠物玩具</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>宠物洗护美容</span>   
+							<span>宠物零食</span>
+							<span>宠物主粮</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/ii7d68gy0_120_120.jpg">
+					<img class="zdhimg" src="image/index/idiu9l0f64.jpg">
+					<img class="zdhimg" src="image/index/ibvxgs0q49.jpg">
+					<img class="zdhimg" src="image/index/ic8njbdh62.jpg">
+					<img class="zdhimg" src="image/index/ijtp33as56_120_120.jpg">
+					<img class="zdhimg" src="image/index/id1tm35y19.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/jq94oiu122null (1).jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9peo633_40_40.png">
+			<!--服饰鞋靴表-->
+			服饰鞋靴<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">时尚新女性</span>
+						<span class="zdhdh-1 shenti">潮流新男性</span>
+					</div>
+					<hr>                    
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">连衣裙</span>
+							<span class="zdh-red">女士T恤</span>
+							<span>女士卫衣</span>
+						</div>               
+						<div class="zdhd0-0">     
+						    <span class="zdh-red">雪纺/蕾丝衫</span>
+							<span>女士毛针织衫</span>
+							<span>女士风衣</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>女士短外套</span>
+							<span>女士牛仔裤</span>
+							<span>女士休闲裤</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span class="zdh-red">半身裙</span>
+							<span>文胸</span>
+							<span>女士家居服</span>
+							<span class="zdh-red">丝袜/打底袜</span>
+						</div> 
+						<div class="zdhd0-0">     
+						    <span>女士棉袜</span>
+							<span>塑身美体</span>
+							<span class="zdh-red">女士凉鞋</span>
+						</div> 
+						<div class="zdhd0-0">     
+						    <span>女士单鞋</span>
+							<span>高跟鞋</span>
+							<span>女士运动/帆布鞋</span>
+						</div> 
+					</div>               
+					<div class="zdhxq1 zubu">
+					    <div class="zdhd0-0">        
+						    <span class="zdh-red">男士T恤</span>
+							<span class="zdh-red">男士衬衫</span>
+							<span class="zdh-red">男士POLO衫</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>男士卫衣</span>
+							<span>男士毛衣/针织</span>
+							<span>男士外套</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>男士牛仔裤</span>
+							<span>男士休闲裤</span>
+							<span>男士短裤</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span class="zdh-red">男士内裤</span>
+							<span class="zdh-red">男士家居服</span>
+							<span>男士棉袜</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>男士休闲鞋</span>
+							<span>男士运动/帆布鞋</span>
+							<span>商务鞋</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span class="zdh-red">男士凉鞋</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">软萌婴童</span>
+					</div>
+					<hr>                          
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>儿童裙子</span>
+							<span>儿童连体衣</span>
+							<span>儿童套装</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span class="zdh-red">儿童外套</span>
+							<span>儿童裤子</span>
+							<span class="zdh-red">儿童T恤</span>
+							<span>学步鞋</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>儿童凉鞋</span>
+							<span>儿童运动鞋</span>
+							<span>儿童休闲鞋</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>儿童卫衣</span>
+							<span>儿童家居服</span>
+						</div>
+					</div>        
+					<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/iv7hsp6527_120_120.jpg">
+					<img class="zdhimg" src="image/index/ie19nlsm66.jpg">
+					<img class="zdhimg" src="image/index/id8lour429.jpg">
+					<img class="zdhimg" src="image/index/iufgycaw18_120_120.jpg">
+					<img class="zdhimg" src="image/index/1cj2db4o551_120_120.jpg">
+					<img class="zdhimg" src="image/index/ipzb1jpa67_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/1c8527h6j15_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9p5fv45_40_40.png">
+			<!--运动户外表-->
+			运动户外<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">运动鞋</span>
+						<span class="zdhdh-1">运动服装</span>
+					</div>
+					<hr>                         
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">跑步鞋</span>
+							<span>休闲鞋</span>
+							<span>篮球鞋</span>
+							<span class="zdh-red">NIKE</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span class="zdh-red">阿迪达斯</span>
+							<span class="zdh-red">ASICS</span>
+							<span>美津浓</span>
+							<span>SKORA</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>Under Armour</span>
+						</div>     
+					</div>
+					<div class="zdhxq1 txu">
+					    <div class="zdhd0-0">        
+						    <span class="zdh-red">运动T恤</span>
+							<span>运动卫衣</span>
+							<span>运动裤</span>
+							<span>更多商品</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>NIKE</span>
+							<span class="zdh-red">阿迪达斯</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">户外鞋靴</span>
+						<span class="zdhdh-1 fenlei">户外服装</span>
+					</div>
+					<hr>                       
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>登山鞋</span>
+							<span class="zdh-red">徒步鞋</span>
+							<span>工装靴</span>
+							<span class="zdh-red">溯溪鞋</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>越野跑鞋</span>
+							<span class="zdh-red">LOWA</span>
+							<span class="zdh-red">CRISPI</span>
+							<span class="zdh-red">Bestard</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span class="zdh-red">Keen</span>
+						</div>
+					</div>                    
+					<div class="zdhxq1 txu">           
+					    <div class="zdhd0-0">             
+						    <span>速干T恤</span>    
+							<span>卫衣衬衣</span>
+							<span>皮肤风衣</span>
+							<span>冲锋衣裤</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>户外裤</span>     
+							<span>功能内衣</span>
+							<span>帽子/皮带</span>     
+							<span class="zdh-red">土拨鼠</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span class="zdh-red">巴塔</span>     
+							<span>棉服</span>
+							<span>手套</span>     
+							<span>围巾/围脖</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>其他户外服饰</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">户外装备</span>
+						<span class="zdhdh-1 fenlei">更多分类</span>
+					</div>
+					<hr>                          
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span class="zdh-red">登山包</span>   
+							<span>休闲包</span>
+							<span>越野跑包</span>   
+							<span>腰包</span>
+							<span class="zdh-red">头巾</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>水壶</span>   
+							<span>打火机</span>
+							<span>军刀</span>
+							<span>露营装备</span>
+							<span class="zdh-red">佳明</span>
+						</div>
+					</div>            
+					<div class="zdhxq1 jiyou">
+						<div class="zdhd0-0">           
+							<span class="zdh-red">汽车机油</span>   
+							<span>渔具</span>
+							<span class="zdh-red">壳牌</span>
+							<span>智能穿戴</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span class="zdh-red">速尔跑步机</span>   
+							<span class="zdh-red">游泳</span>
+							<span class="zdh-red">运动相机</span>
+							<span class="zdh-red">运动健身</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/1c2goh82q13_120_120.jpg">
+					<img class="zdhimg" src="image/index/iedmyq5196.jpg">
+					<img class="zdhimg" src="image/index/ie9wevvj80.jpg">
+					<img class="zdhimg" src="image/index/igbm30kg53_120_120.jpg">
+					<img class="zdhimg" src="image/index/io3ngruj52_120_120.jpg">
+					<img class="zdhimg" src="image/index/iojshlll10_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/ir73myvy45_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9o36p76_40_40.png">
+			<!--手表配饰表-->
+			手表配饰<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">腕表</span>
+						<span class="zdhdh-1 dapai">大牌眼镜</span>
+					</div>
+					<hr>                             
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">瑞士名表</span>
+							<span>经典国表</span>
+							<span>欧美腕表</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>日韩腕表</span>
+							<span>钟表配件</span>
+							<span class="zdh-red">欧米茄</span>
+							<span class="zdh-red">浪琴</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>天梭</span>
+							<span>DW</span>
+							<span class="zdh-red">西铁城</span>
+							<span>EMPORIO ARMANI</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>ADEXE</span>
+							<span>美度</span>
+							<span>Swatch</span>
+							<span>卡西欧</span>
+						</div> 
+					</div>             
+					<div class="zdhxq1 taiyang">
+					    <div class="zdhd0-0">        
+						    <span>太阳眼镜</span>
+							<span class="zdh-red">Ray·Ban 雷朋</span>
+							<span class="zdh-red">GUCCI</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>Dior 迪奥</span>
+							<span class="zdh-red">BURBERRY</span>
+							<span>PRADA</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>TOM FORD</span>
+							<span>miu miu</span>
+							<span>FURLA</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>BOLON 暴龙</span>
+							<span>MOLSION 陌森</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>光学镜架/镜片</span>
+							<span>烟具/配件</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">潮流饰品</span>
+						<span class="zdhdh-1 bibei">黄金珠宝</span>
+					</div>
+					<hr>                            
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">项链</span>
+							<span>手链/手镯</span>
+							<span class="zdh-red">耳饰</span>
+							<span>串珠</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>时尚戒指</span>
+							<span>项坠/吊坠</span>
+							<span>Chocker</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>施华洛世奇</span>
+							<span>潘多拉</span>
+							<span class="zdh-red">apm</span>
+							<span>时尚发饰</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>胸针</span>
+							<span>钥匙扣</span>
+							<span>饰品套装</span>
+						</div>
+					</div>                    
+					<div class="zdhxq1">           
+					    <div class="zdhd0-0">             
+						    <span class="zdh-red">周生生</span>    
+							<span>周大福</span>
+							<span>六福珠宝</span>
+							<span class="zdh-red">黄金项链</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>黄金手链</span>     
+							<span>黄金转运珠</span>
+							<span>黄金耳饰</span>
+							<span>K金</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>铂金</span>     
+							<span>钻石</span>
+							<span>天然珍珠</span>
+							<span>彩宝</span>
+							<span>水晶玛瑙</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>翡翠玉石</span>     
+							<span>银饰</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/idihqwbw73.jpg">
+					<img class="zdhimg" src="image/index/id2s1syx28.jpg">
+					<img class="zdhimg" src="image/index/ij3oxyva36_120_120.jpg">
+					<img class="zdhimg" src="image/index/id2t3q0y45.jpg">
+					<img class="zdhimg" src="image/index/iewa52sh30_120_120.jpg">
+					<img class="zdhimg" src="image/index/ihys7dd998_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/1c50ff79f26_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9mvrc65_40_40.png">
+			<!--轻奢表-->
+			轻奢<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">轻奢包袋</span>
+						<span class="zdhdh-1 mingbao">重奢名包</span>
+					</div>
+					<hr>                         
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>MICHAEL KORS 迈克高仕</span>
+							<span class="zdh-red">FURLA 芙拉</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>COACH 蔻驰</span>
+							<span>COCCINELLE</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>PINKO 品高</span>
+							<span>LONGCHAMP 珑骧</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>MARC JACOBS 马克雅克布</span>
+							<span class="zdh-red">Kate Spade</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>Rebecca Minkoff</span>
+							<span>Tory Burch</span>
+						</div>
+					</div>        
+					<div class="zdhxq1 zubu">
+					    <div class="zdhd0-0">        
+						    <span>GUCCI 古驰</span>
+							<span>BURBERRY 博柏利</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>FENDI 芬迪</span>
+							<span>PRADA 普拉达</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>CÉLINE 思琳</span>
+							<span>SAINT LAURENT PARIS</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>Chloé 蔻依</span>
+							<span>MARNI 玛尼</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">服饰鞋靴</span>
+						<span class="zdhdh-1 bibei">功能箱包</span>
+					</div>
+					<hr>                 
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>KENZO 高田贤三</span>
+							<span>VERSACE 范思哲</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>GUCCI 古驰</span>
+						</div>
+					</div>           
+					<div class="zdhxq1 xiuli">           
+					    <div class="zdhd0-0">             
+						    <span>Samsonite 新秀丽</span>    
+							<span>RIMOWA</span>
+							<span>旅行大师</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>TUMI 途明</span>     
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">腰带专区</span>
+					</div>
+					<hr>                   
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span>GUCCI 古驰</span>   
+							<span>Ferragamo 菲拉格慕</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>MONTBLANC 万宝龙</span>   
+							<span>Zegna 杰尼亚</span>
+						</div>
+					</div>            
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/id2q3etz98.jpg">
+					<img class="zdhimg" src="image/index/id1tosf320.jpg">
+					<img class="zdhimg" src="image/index/id2fm4ms50.jpg">
+					<img class="zdhimg" src="image/index/ii8tv4yk15_120_120.jpg">
+					<img class="zdhimg" src="image/index/id2pp8658.jpg">
+					<img class="zdhimg" src="image/index/ibxec5al87.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/iqmfbh3y97_244_100.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cvslvedr99_40_40.png">
+			<!--家居生活表-->
+			家居生活<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">壶杯滤水</span>
+						<span class="zdhdh-1 canju">厨房餐具</span>
+					</div>
+					<hr>                         
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">杯子/水壶</span>
+							<span>滤水滤芯</span>
+							<span>茶具</span>
+							<span>酒具</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>咖啡器皿</span>
+							<span class="zdh-red">膳魔师</span>
+							<span class="zdh-red">碧然德</span>
+							<span>象印</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>ASVEL 阿司倍鹭</span>
+						</div>     
+					</div>        
+					<div class="zdhxq1 guoju">
+					    <div class="zdhd0-0">        
+						    <span class="zdh-red">锅具</span>
+							<span>刀具</span>
+							<span class="zdh-red">餐具</span>
+							<span>厨房小工具</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>保鲜工具</span>
+							<span>厨房储物</span>
+							<span>韦诺森</span>
+							<span class="zdh-red">双立人</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>康宁</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">家纺布艺</span>
+						<span class="zdhdh-1 canju">家具家装</span>
+					</div>
+					<hr>                        
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span>床垫</span>
+							<span class="zdh-red">枕头/枕芯</span>
+							<span class="zdh-red">被子</span>
+							<span class="zdh-red">床品套件</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>毛毯/蚊帐</span>
+							<span>家居鞋服</span>
+							<span>NITTAYA</span>
+							<span>LOVO</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>博洋家纺</span>
+							<span>芭蕾丽丝</span>
+						</div>
+					</div>                   
+					<div class="zdhxq1 jiaju">           
+					  <div class="zdhd0-0">             
+						  <span class="zdh-red">家具</span>    
+							<span>家装建材</span>
+							<span>灯饰照明</span>
+							<span>家装家饰</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span>阳台/户外家具</span>     
+							<span>浴室卫浴</span>
+							<span>五金工具</span>
+						</div>
+						<div class="zdhd0-0">             
+						    <span class="zdh-red">沙发</span>    
+							<span>顾家家居</span>
+							<span>黑白调</span>
+							<span>KOHLER 科勒</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span class="zdh-red">雅兰床垫</span>     
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">家居清洁</span>
+						<span class="zdhdh-1 canju">日用百货</span>
+					</div>
+					<hr>                      
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span class="zdh-red">家庭清洁</span>   
+							<span>除臭芳香</span>
+							<span class="zdh-red">衣物清洁/护理</span>   
+						</div>
+						<div class="zdhd0-0">      
+							<span class="zdh-red">纸品/湿巾</span>   
+							<span>驱蚊驱虫</span>
+							<span>清洁工具</span>
+						</div>
+					</div>           
+					<div class="zdhxq1 riyong">
+						<div class="zdhd0-0">           
+							<span class="zdh-red">日用收纳</span>   
+							<span class="zdh-red">保暖工具</span>
+							<span>洗衣晾晒</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span>个人用品</span>   
+							<span>礼物/文创</span>
+							<span>蕉下</span>
+							<span>Tenma 天马</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/ig1oirv958_120_120.jpg">
+					<img class="zdhimg" src="image/index/id1tm35y19.jpg">
+					<img class="zdhimg" src="image/index/iz9i6c5j4_120_120.jpg">
+					<img class="zdhimg" src="image/index/ik4rlnpl15_120_120.jpg">
+					<img class="zdhimg" src="image/index/1bi5rifam58_120_120(1).jpg">
+					<img class="zdhimg" src="image/index/id0z24735.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/jq94phov23null.jpg">
+				</div>
+			</div>
+		</li>
+    <li class="zdhl1 meirong">
+			<img class="zdhimg-1" src="image/index/1cet9or5050_40_40.png">
+			<!--环球美食表-->
+			环球美食<span class="zdhs1">></span>
+			<div id="zdhd0">
+			    <div>
+					<div>
+						<span class="zdhdh-1">乳品/咖啡/麦片/冲饮</span>
+						<span class="zdhdh-1 remen0">人气热门</span>
+					</div>
+					<hr>                             
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">成人奶粉</span>
+							<span>奶片</span>
+							<span class="zdh-red">进口牛奶</span>
+							<span>酸奶</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>其他乳品</span>
+							<span class="zdh-red">麦片</span>
+							<span>五谷冲饮</span>
+							<span>热可可</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>其他冲饮</span>
+							<span class="zdh-red">速溶咖啡</span>
+							<span>咖啡粉</span>
+							<span>咖啡豆</span>
+						</div>
+						<div class="zdhd0-0">     
+						    <span>胶囊咖啡</span>
+							<span>咖啡伴侣</span>
+						</div> 
+					</div>         
+					<div class="zdhxq1 deyun">
+					    <div class="zdhd0-0">        
+						    <span class="zdh-red">德运</span>
+							<span>丸太拉面</span>
+							<span class="zdh-red">UCC咖啡</span>
+							<span>轩尼诗</span>
+						</div>
+						<div class="zdhd0-0">        
+						    <span>成人奶粉</span>
+							<span>可乐</span>
+							<span class="zdh-red">早餐麦片</span>
+							<span class="zdh-red">歌帝梵</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span class="zdh-red">卡乐比</span>
+							<span>巴黎水</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">休闲零食</span>
+						<span class="zdhdh-1 bibei">茶/酒/饮料</span>
+					</div>
+					<hr>                         
+					<div class="zdhxq1">
+					    <div class="zdhd0-0">     
+						    <span class="zdh-red">饼干糕点</span>
+							<span class="zdh-red">坚果</span>
+							<span class="zdh-red">糕点</span>
+							<span>蜜饯果干</span>
+						</div>
+						<div class="zdhd0-0">    
+						    <span>糖果巧克力</span>
+							<span>口香糖</span>
+							<span class="zdh-red">薯片/膨化</span>
+							<span>海产品</span>
+						</div>
+						<div class="zdhd0-0"> 
+						    <span>果冻布丁</span>
+							<span class="zdh-red">肉脯干</span>
+							<span>其他零食</span>
+						</div>
+					</div>                  
+					<div class="zdhxq1 huli">           
+					    <div class="zdhd0-0">             
+						    <span class="zdh-red">葡萄酒</span>    
+							<span>洋酒</span>
+							<span>白酒</span>
+							<span class="zdh-red">啤酒</span>
+							<span>黄酒</span>
+						</div>
+						<div class="zdhd0-0">             
+						    <span class="zdh-red">品质水饮</span>    
+							<span>饮料</span>
+							<span class="zdh-red">碳酸饮料</span>
+							<span>果蔬汁</span>
+						</div>
+						<div class="zdhd0-0">
+						    <span class="zdh-red">花草茶</span>     
+							<span>茶饮</span>
+							<span>果酒</span>
+						</div>
+					</div>
+					<div class="qingchu"></div>
+					<div>
+						<span class="zdhdh-1">水果生鲜</span>
+						<span class="zdhdh-1 bibei">粮油副食</span>
+					</div>
+					<hr>                         
+					<div class="zdhxq1">
+						<div class="zdhd0-0">   
+							<span class="zdh-red">新鲜水果</span>   
+							<span class="zdh-red">水产海鲜</span>
+							<span>肉禽蛋</span>   
+							<span class="zdh-red">小龙虾</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span class="zdh-red">红虾白虾</span>   
+							<span class="zdh-red">牛油果</span>
+							<span>牛排</span>
+							<span>鳕鱼</span>   
+							<span>榴莲</span>
+						</div>
+					</div>                   
+					<div class="zdhxq1 deyun">
+						<div class="zdhd0-0">           
+							<span>调味品/料理</span>   
+							<span>果酱/酱料</span>
+							<span class="zdh-red">食用油/橄榄油</span>
+						</div>
+						<div class="zdhd0-0">      
+							<span class="zdh-red">泡面</span>   
+							<span>方便速食</span>
+							<span>罐头</span>
+							<span>方便菜</span>
+						</div>
+					</div>
+				</div>
+				<div class="qingchu"></div>
+			    <div id="zdhd0-1">
+				    <img class="zdhimg" src="image/index/ii741aro99_120_120.jpg">
+						<img class="zdhimg" src="image/index/ii71r07a69_120_120.jpg">
+						<img class="zdhimg" src="image/index/ik69djvv98_120_120.jpg">
+						<img class="zdhimg" src="image/index/ii71rilz17_120_120.jpg">
+						<img class="zdhimg" src="image/index/id1sb1iq81.jpg">
+						<img class="zdhimg" src="image/index/iiflp05q79_120_120.jpg">
+				    <img class="zdhimg zdhimg-9" src="image/index/iqmfaswb6_244_100.jpg">
+				</div>
+			</div>
+		</li>
+     </ul>
+</div>
+
+<!-- 商品详情导航 -->
+<div class="goods-top">
+	<ul>
+		<li class="goods-top-li">美容护肤</li>
+		<li class="goods-top-li">></li>
+		<li class="goods-top-li goods-top-l1">
+			<div class="goods-top-li-1"><a href="">面部清洁</a></div>
+			<div class="goods-top-li-2">
+				<a href="">面部护肤</a>
+				<a href="">唇部护理</a>
+				<a href="">眼部护理</a>
+				<a href="">防晒修复</a>
+			</div>
+		</li>
+		<li class="goods-top-li">></li>
+		<li class="goods-top-li goods-top-l1">
+			<div class="goods-top-li-1 goods-top-li-11"><a href="">洁面</a></div>
+			<div class="goods-top-li-2">
+				<a href="">卸妆</a>
+				<a href="">面部磨砂/去角质</a>
+				<a href="">面部清洁套装</a>
+			</div>
+		</li>
+		<li class="goods-top-li">></li>
+		<li class="goods-top-li goods-top-l1">
+			<div class="goods-top-li-1"><a href="">芙丽芳丝</a></div>
+			<div class="goods-top-li-2">
+				<a href="">资生堂</a>
+				<a href="">花王</a>
+				<a href="">雅诗兰黛</a>
+				<a href="">A.H.C</a>
+				<a href="">雪花秀</a>
+			</div>
+		</li>
+		<li class="goods-top-li">></li>
+		<li class="goods-top-li">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g</li>
+	</ul>	
+</div>
+
+<!-- 商品详情内容 -->
+<div class="goods-dtl qingchu">
+	<div class="goods-dtl-1">
+		<img class="goods-dtl-img" src="image/detail/imq35qpb21_800_800.jpg" alt="">
+	</div>
+	<dl class="goods-dtl-2">
+		<dt class="content-p1">
+			<img class="goods-dtl-img1" src="image/detail/1cc2m9est21_46_46.png" alt="">
+			日本 | <a href="">Freeplus 芙丽芳丝</a>
+		</p>
+		<dt class="product-title">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g</dt>
+		<dt class="product-cnt">【此款管口无锡纸塑封】氨基酸洁面的杰出王者，口碑好到炸裂！敏感肌福音。不含防腐剂、香料、色素、酒精、紫外线吸收剂等，洗完肌肤不干燥紧绷，滑嫩舒爽自在。</dt>
+		<dd class="m-price-wrap">
+			<div class="m-price">
+				<span class="m-price-title">售价</span>
+				<div class="m-price-cnt">
+					<span class="newusertxt">新人价</span>
+					<span class="newuserprice">¥99.00</span>
+					<span class="kaolaprice">考拉价 ￥119.00</span>
+				</div>
+			</div>
+			<div class="m-vipmember">
+				<img class="vicon" src="image/detail/6dc03e40-5452-4a3e-a039-1ae8badbce2e_120_45.png" alt="">
+				<span class="blacktxt">黑卡会员预计可</span>
+				<span class="redtxt">
+					省¥3.96
+					<img src="image/detail/iconcopy.png" alt="">
+				</span>
+			</div>
+			<div class="msg">
+				<span>含会员96折</span>
+				<a class="vtxt" href="">立即开卡</a>
+			</div>
+			<div class="m-multipack m-price">
+				<span class="m-price-title m-line-title">更多组合</span>
+				<ul class="packlst">
+					<li class="packli z-cur">1件装 | 单件99元</li>
+					<li class="packli">2件装 | 单件97.5元</li>
+					<li class="packli">3件装 | 单件93元</li>
+				</ul>
+			</div>
+			<div class="couponwrap">
+				<img class="v-couponicon" src="image/detail/coupon-icon.2cc23d0.png" alt="">
+				<img class="v-coupontag" src="image/detail/6c0ba6fa-3faa-4b12-a114-66e9d74dca70.png" alt="">
+				<span class="blacktxt">先领满599减70优惠券，再下单</span>
+				<a class="vtxt vtxt1" href="">点击领取</a>
+			</div>
+		</dd>
+		<dd class="m-promotiontitle">
+			<span>活动</span>
+			<span class="m-dp-prt-title">满额换购</span>
+			<a class="redtxt red1" href="">满1元可换购商品</a>
+			<a class="redtxt red1" href="">点击凑单></a>
+		</dd>
+		<dd class="m-promotiontitle">
+				<span>运费</span>
+				<span class="from2">至</span>
+				<select name="" id="iptw">
+					<option value="">请选择省市区</option>
+				</select>
+				<span class="u-postage">满88元包邮</span>
+		</dd>
+		<dd class="m-promotiontitle">
+				<span>服务</span>
+				<span class="from2">本商品由 自营国内仓 发货</span>
+				<ul class="m-postage-list">
+					<li class="postage-item">
+						<img class="postage-img" src="image/detail/imrp3gq020_120_120.jpg" alt="">
+						<p>正品货源</p>
+						<span class="postage-line"></span>
+					</li>
+					<li class="postage-item">
+						<img class="postage-img" src="image/detail/fahuodi@3x.png" alt="">
+						<p>自营国内发货</p>
+						<span class="postage-line"></span>
+					</li>
+					<li class="postage-item">
+						<img class="postage-img" src="image/detail/mudidi@3x.png" alt="">
+						<p>郑州市</p>
+					</li>
+				</ul>
+				<div class="tomorrowarr">24:00前完成支付，预计 <span class="f-bold">8月29日(周四)</span> 送达</div>
+		</dd>
+		<div class="m-promotiontitle">
+				<span>数量</span>
+				<span class="ctrnum-wrap">
+					<a class="ctrnum-b ctrnum-b-rd" @click="change">-</a>
+					<span class="ctrnum-qty" v-text="n"></span>
+					<a class="ctrnum-b ctrnum-b-ld" @click="change">+</a>
+				</span>
+				</div>
+		<div class="m-promotiontitle">
+				<span>说明</span>
+				<ul class="buynowonly-tip-lis">
+					<li class="f-f1">
+						<img class="f-f2" src="image/detail/support.ede6c07.png" alt="">
+						会员96折
+					</li>
+					<li class="f-f1">
+						<img class="f-f2" src="image/detail/support.ede6c07.png" alt="">
+						正品保障
+					</li>
+					<li class="f-f1">
+						<img class="f-f2" src="image/detail/support.ede6c07.png" alt="">
+						支持30天无忧退货
+					</li>
+				</ul>
+		</div>
+		<div class="buyBtns">
+			<a class="j-buynow-btn" href="">立即购买</a>
+			<a class="addCart" href="">加入购物车</a>
+			<a class="m-favbtn" href="">
+				<span></span>
+				收藏</a>
+		</div>
+		<dd class="j-commentbar">
+			<span></span>
+			<span class="goodPercent">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+				98%
+			</span>
+			<span class="comnum">164090人评价</span>
+			<span class="comnum">15174人晒单</span>
+		</dd>
+		<dd class="j-excelcomm">
+			<p class="tit">y***b    2019-07-17 19:02:16</p>
+			<p>本人肤质敏感,每个月那么几天会冒几颗痘痘,T 区油,两颊干,至从用了芙丽芳丝的洗面奶之后, 对比之前用的国产洗面奶,有种相见恨晚的感觉 这款是氨基酸洗面奶,即温和,又能洗干净,护肤 第一步就是要洗干净脸,大家都知道的哈,这款就 能满足你的洗脸要求哦!</p>
+		</dd>
+	</dl>
+</div>
+
+<!-- 优惠套餐 相关推荐 -->
+<div id="comboRecbox">
+	<ul class="n-combotab">
+		<li class="itm">
+			<a class="v-link" href="">优惠套餐</a>
+		</li>	
+		<li class="itm">
+			<a class="v-link-1" href="">相关推荐</a>
+		</li>
+	</ul>
+	<div class="n-comboinfo qingchu">
+		<div class="combolist">
+			<ul class="combonamelist qingchu">
+				<li class="nameitm"><a class="v-link-2" href="">Freeplus洗面奶+纯露</a></li>
+				<li class="nameitm"><a class="v-link-3" href="">Freeplus洁面+洗脸刷</a></li>
+			</ul>
+			<ul class="prdlist">
+				<li class="itm1">
+					<img src="image/detail/5b7bbf42e1764784a050a83a3127d2d61552564629459jt8kw72810022.jpg" alt="">
+					<p class="tit-1">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g</p>
+					<div class="v-icon">
+						<p class="vertical"></p>
+						<p class="transverse"></p>
+					</div>
+				</li>
+				<li class="itm1">
+					<img src="image/detail/d5c32b55465240a5a6cdebd547bb7a731527247304600jhlvm26b10672.jpg" alt="">
+					<p class="tit-1">【白皙透亮】宋轶同款大马士革玫瑰纯露</p>
+				</li>
+			</ul>
+		</div>
+		<form class="n-pricebox" action="">
+			<p class="name">Freeplus洁面+洗脸刷</p>
+			<p class="comboprice">套餐价：
+				<span class="num">¥218</span>	
+			</p>
+			<p class="curprice">单买价：&nbsp;¥228	
+			</p>
+			<a class="v-btn" href="">立即购买</a>
+			<a class="v-btn v-btn-1" href="">加入购物车</a>
+		</form>
+	</div>
+	<div class="n-comboinfo qingchu n-comboinfo-1">
+		<div class="combolist">
+			<ul class="combonamelist qingchu">
+				<li class="nameitm">
+					<a class="v-link-2" href="">Freeplus洗面奶+纯露</a>
+				</li>
+				<li class="nameitm">
+					<a class="v-link-3" href="">Freeplus洁面+洗脸刷</a>
+				</li>
+			</ul>
+			<ul class="prdlist">
+				<li class="itm1">
+					<img src="image/detail/5b7bbf42e1764784a050a83a3127d2d61552564629459jt8kw72810022.jpg" alt="">
+					<p class="tit-1">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g</p>
+					<div class="v-icon">
+						<p class="vertical"></p>
+						<p class="transverse"></p>
+					</div>
+				</li>
+				<li class="itm1">
+					<img src="image/detail/d5c32b55465240a5a6cdebd547bb7a731527247304600jhlvm26b10672.jpg" alt="">
+					<p class="tit-1">【白皙透亮】宋轶同款大马士革玫瑰纯露</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- 商品详情 用户评价 -->
+<div class="mainBtmWrap qingchu">
+	<div class="siderBox">
+		<div class="j-listseebuy">
+			<h4>看了最终买</h4>
+			<ul class="userBuyView">
+				<li class="clearfix">
+					<img src="image/detail/1bnke2u7089_800_800.jpg" alt="">
+					<p class="productTit">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g*2</p>
+					<p class="productPrice">
+						<span>¥209</span>
+						<del>¥255</del>
+					</p>
+					<p class="commentCount">247927 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/7e90ad5e-130e-4332-b951-b4241cb6873c.jpg" alt="">
+					<p class="productTit">【温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g</p>
+					<p class="productPrice">
+						<span>¥104</span>
+						<del>¥159</del>
+					</p>
+					<p class="commentCount">422 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/7eb32837b6e148d286a9778a1af601f11546483770313jqg0i9xt10411.jpg" alt="">
+					<p class="productTit">Kao 花王 Curél珂润润浸保湿洁颜泡沫 150毫升 任何肤质都hold住</p>
+					<p class="productPrice">
+						<span>¥75</span>
+						<del>¥108</del>
+					</p>
+					<p class="commentCount">22477 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/iv99zkcc27_800_800.jpg" alt="">
+					<p class="productTit">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g*3</p>
+					<p class="productPrice">
+						<span>¥279</span>
+						<del>¥345</del>
+					</p>
+					<p class="commentCount">247906 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/fa911774e8b44e00959f1ff040cbdb421554109707198jty4sko112790.jpg" alt="">
+					<p class="productTit">EltaMD 氨基酸泡沫卸妆洁面乳 207毫升</p>
+					<p class="productPrice">
+						<span>¥158</span>
+						<del>¥228</del>
+					</p>
+					<p class="commentCount">89338 人已评价</p>
+				</li>
+				<li class="clearfix bbNone">
+					<img src="image/detail/41015ee6d8a54488b6d49c569f5507071558609302152jw0jqi6810688.jpg" alt="">
+					<p class="productTit">【199元2支】【平价香奈儿】vidivici 净透美肌洁面乳 120毫升 女神蚕丝嫩白洁面</p>
+					<p class="productPrice">
+						<span>¥115</span>
+						<del>¥200</del>
+					</p>
+					<p class="commentCount">23852 人已评价</p>
+				</li>
+			</ul>
+		</div>
+		<div class="j-listseebuy">
+			<h4>看了又看</h4>
+			<ul class="userBuyView">
+				<li class="clearfix">
+					<img src="image/detail/1bnke2u7089_800_800.jpg" alt="">
+					<p class="productTit">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g*2</p>
+					<p class="productPrice">
+						<span>¥209</span>
+						<del>¥255</del>
+					</p>
+					<p class="commentCount">247927 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/7e90ad5e-130e-4332-b951-b4241cb6873c.jpg" alt="">
+					<p class="productTit">【温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g</p>
+					<p class="productPrice">
+						<span>¥104</span>
+						<del>¥159</del>
+					</p>
+					<p class="commentCount">422 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/7eb32837b6e148d286a9778a1af601f11546483770313jqg0i9xt10411.jpg" alt="">
+					<p class="productTit">Kao 花王 Curél珂润润浸保湿洁颜泡沫 150毫升 任何肤质都hold住</p>
+					<p class="productPrice">
+						<span>¥75</span>
+						<del>¥108</del>
+					</p>
+					<p class="commentCount">22477 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/iv99zkcc27_800_800.jpg" alt="">
+					<p class="productTit">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g*3</p>
+					<p class="productPrice">
+						<span>¥279</span>
+						<del>¥345</del>
+					</p>
+					<p class="commentCount">247906 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<img src="image/detail/fa911774e8b44e00959f1ff040cbdb421554109707198jty4sko112790.jpg" alt="">
+					<p class="productTit">EltaMD 氨基酸泡沫卸妆洁面乳 207毫升</p>
+					<p class="productPrice">
+						<span>¥158</span>
+						<del>¥228</del>
+					</p>
+					<p class="commentCount">89338 人已评价</p>
+				</li>
+				<li class="clearfix bbNone">
+					<img src="image/detail/41015ee6d8a54488b6d49c569f5507071558609302152jw0jqi6810688.jpg" alt="">
+					<p class="productTit">【199元2支】【平价香奈儿】vidivici 净透美肌洁面乳 120毫升 女神蚕丝嫩白洁面</p>
+					<p class="productPrice">
+						<span>¥115</span>
+						<del>¥200</del>
+					</p>
+					<p class="commentCount">23852 人已评价</p>
+				</li>
+			</ul>
+		</div>
+		<div class="j-listseebuy">
+			<h4>热销排行榜</h4>
+			<ul class="userBuyView">
+				<li class="clearfix">
+					<b class="rank">1</b>
+					<img src="image/detail/1bnke2u7089_800_800.jpg" alt="">
+					<p class="productTit">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g*2</p>
+					<p class="productPrice">
+						<span>¥209</span>
+						<del>¥255</del>
+					</p>
+					<p class="commentCount">247927 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<b class="rank">2</b>
+					<img src="image/detail/7eb32837b6e148d286a9778a1af601f11546483770313jqg0i9xt10411.jpg" alt="">
+					<p class="productTit">Kao 花王 Curél珂润润浸保湿洁颜泡沫 150毫升 任何肤质都hold住</p>
+					<p class="productPrice">
+						<span>¥75</span>
+						<del>¥108</del>
+					</p>
+					<p class="commentCount">22477 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<b class="rank">3</b>
+					<img src="image/detail/iv99zkcc27_800_800.jpg" alt="">
+					<p class="productTit">【当家爆款 温和氨基酸】Freeplus 芙丽芳丝 净润洗面霜 100g*3</p>
+					<p class="productPrice">
+						<span>¥279</span>
+						<del>¥345</del>
+					</p>
+					<p class="commentCount">247906 人已评价</p>
+				</li>
+				<li class="clearfix">
+					<b class="rank">4</b>
+					<img src="image/detail/fa911774e8b44e00959f1ff040cbdb421554109707198jty4sko112790.jpg" alt="">
+					<p class="productTit">EltaMD 氨基酸泡沫卸妆洁面乳 207毫升</p>
+					<p class="productPrice">
+						<span>¥158</span>
+						<del>¥228</del>
+					</p>
+					<p class="commentCount">89338 人已评价</p>
+				</li>
+				<li class="clearfix bbNone">
+					<b class="rank">5</b>
+					<img src="image/detail/41015ee6d8a54488b6d49c569f5507071558609302152jw0jqi6810688.jpg" alt="">
+					<p class="productTit">【199元2支】【平价香奈儿】vidivici 净透美肌洁面乳 120毫升 女神蚕丝嫩白洁面</p>
+					<p class="productPrice">
+						<span>¥115</span>
+						<del>¥200</del>
+					</p>
+					<p class="commentCount">23852 人已评价</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="goodsDetailWrap qingchu">
+		<div class="j-nav">
+			<span class="j-navtab">商品详情</span>
+			<span class="userratingTab">用户评价
+				<em>164688</em>
+			</span>
+			<div class="m-appbuy">
+				<p class="action">手机购买</p>
+				<p class="qranchor"></p>
+				<div class="qrcodeic">
+					<img class="logo" src="image/detail/78ce0733-8bae-43a7-bee9-82c2fff0e6d1.png" alt="">
+					<img src="image/detail/erweima.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 商品详情-->
+		<div id="goodsDetail">
+			<ul class="goods_parameter">
+				<li class="goods-list">
+					<div class="proTitle">产品信息</div>
+					<div class="ellipsisGroup">
+						<div class="proValue">
+							<div class="proChileName">失效日期</div>
+							<div class="proChileValue">2023年01月22日——2023年11月22日，具体日期以实际发货批次为准</div>
+						</div>
+						<div class="proValue">
+							<div class="proChileName">保质期</div>
+							<div class="proChileValue">1825天</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="proTitle">关键属性</div>
+					<div class="ellipsisGroup">
+						<div class="proValue">
+							<div class="proChileName">适合肤质</div>
+							<div class="proChileValue">干性肤质 敏感型肤质</div>
+						</div>
+						<div class="proValue">
+							<div class="proChileName">质地</div>
+							<div class="proChileValue">霜状</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="proTitle">其他属性</div>
+					<div class="ellipsisGroup">
+						<div class="rowLi">
+							<div class="proValue">
+								<div class="proChileName">功能</div>
+								<div class="proChileValue">淡化黑头 滋润 深层清洁</div>
+							</div>
+							<div class="proValue">
+								<div class="proChileName">适用部位</div>
+								<div class="proChileValue">面部</div>
+							</div>
+						</div>
+						<div class="rowLi">
+							<div class="proValue">
+								<div class="proChileName">适用群体</div>
+								<div class="proChileValue">所有人群</div>
+							</div>
+							<div class="proValue">
+								<div class="proChileName">起泡程度</div>
+								<div class="proChileValue">泡沫</div>
+							</div>
+						</div>
+						<div class="rowLi">
+							<div class="proValue">
+								<div class="proChileName">香型</div>
+								<div class="proChileValue">无香型</div>
+							</div>
+							<div class="proValue">
+								<div class="proChileName">品名</div>
+								<div class="proChileValue">净润洗面霜</div>
+							</div>
+						</div>
+						<div class="rowLi">
+							<div class="proValue">
+								<div class="proChileName">产品类型</div>
+								<div class="proChileValue">洁面乳</div>
+							</div>
+							<div class="proValue">
+								<div class="proChileName">适用年龄</div>
+								<div class="proChileValue">18-35岁</div>
+							</div>
+						</div>
+						<div>
+							<div class="proValue">
+								<div class="proChileName">产地</div>
+								<div class="proChileValue">以实物产品包装显示内容为准</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<h4 class="goodsParaTit">
+				<a class="zk sq" href="">
+					<span>收起</span>
+				</a>
+			</h4>
+			<div class="m-faketips">
+				<div class="icon">真</div>
+				<div class="cont">
+					<h4>正品保障</h4>
+					<p>考拉海购每一件商品都通过严苛的品质把关，保障正品，保障品质。杜绝一切假货，让您无忧购物。</p>
+				</div>
+			</div>
+			<div class="m-textarea">
+				<div class="textareabox">
+					<img src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722.jpg" alt="">
+					<img src="image/detail/62717c24-d048-11e9-9268-246e96961a28.jpg" alt="">
+					<img class="img-1" src="image/detail/360b4afc9f154206a88b5266eab0406f15525347079171330333-1.gif" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (1).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (2).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (3).jpg" alt="">
+					<img src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (4).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (5).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (6).jpg" alt="">
+					<img class="img-1" src="image/detail/aa482760a0f643d5ae69208d045839c415525347083911330333-2.gif" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (7).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (8).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (9).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (10).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (11).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (12).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (13).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (14).jpg" alt="">
+					<img class="img-1" src="image/detail/746fa5f15de945849d1ea6848300630c15525347087131330333-3.gif" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (15).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (16).jpg" alt="">
+					<img class="img-1" src="image/detail/fcbeeea22c36493ca47a3df498f5dd841543239327143joyculrb11722 (17).jpg" alt="">
+				</div>
+			</div>
+			<div class="packdate">
+				<div class="n-rulemodules">
+					<table></table>
+					<h5>包装与生产日期</h5>
+					<p class="p-text">商品的包装，国外更注重环保和便捷性，而不是包装如何奢华。大部分国际一线品牌，奢侈品的包装也很简单，比如产自欧美，日韩的化妆品，大部分无外盒，不塑封，开口处也没有封口贴。</p>
+					<p class="p-text">国外的商品包装上一般不会单独列出保质期多长，通常只在产品包装上标注生产日期或有效日期，也有只标注出厂批号的情况：比如日本和欧洲的洗护品，化妆品（有些品牌可以根据批号读取日期，在此不做一一列举）。但请放心，考拉海购销售的国外商品都是符合规定的合格产品。有些喷印的日期，在运输过程中因为摩擦碰撞很容易糊掉或碰掉，是正常现象。</p>
+					<p class="p-text">各国商品有效期的书写方式，可在考拉pc页面底部-新手指南-常见问题中查看详情。
+						<br>国外食品一般表示"Best before date"，既最佳赏味日期。该日期不是"最终保质期"，意为在此日期前食用能保证食物新鲜，故在"最佳赏味日期"前食用风味更佳。</p>
+					<h5>价格说明</h5>
+					<ol>
+						<li class="li-text">划线价、参考价：商品展示的划线价或参考价可能是品牌专柜价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或该商品在考拉上曾经展示过的销售价；由于地区、时间的差异性和市场行情的波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。</li>
+						<li class="li-text">促销价：如无特殊说明，促销价是销售商在参考价基础上给予的优惠价格。如有疑问，您可以与客服联系。</li>
+						<li class="li-text">考拉价：考拉非会员用户购买的商品详情页显示的售价，是非会员用户最终决定是否购买该商品的依据。</li>
+						<li class="li-text">会员价：在考拉价的基础上给予会员用户的优惠价格，仅会员用户可以会员价购买该商品。</li>
+						<li class="li-text">工厂价：该产品在工厂生产完成后直供考拉全球工厂店，由工厂店销售给用户的价格，该价格已省去品牌溢价、广告成本、中间商差价等费用。</li>
+						<li class="li-text">折扣：页面显示的“折扣”为考拉价与划线价的对比（该值四舍五入后采小数点后2位，如￥199/￥369=0.5392≈5.4折），该对比值仅供您参考，不作为计算考拉价的依据。</li>
+						<li class="li-text">价格异常：因可能存在系统缓存、页面更新延迟等不确定性情况，导致价格显示异常，商品具体售价请以订单结算页价格为准。如您发现异常情况出现，请立即联系我们补正，以便您能顺利购物。</li>
+					</ol>
+					<h5>消费者告知书</h5>
+					<p class="p-text">尊敬的客户：</p>
+					<p class="p-text p-text-1">您好！为帮助您更好地选购境外商品，
+						<strong>请您在购买前务必认真、详细阅读并完全理解本告知书的全部内容，并对自身风险承担做出客观判断。</strong>同意本告知书内容后再下单购买：</p>
+					<ol>
+						<li class="li-text">您在考拉海购上购买的跨境商品等同于境外购买，商品本身可能无中文标签，如有需要，您可以通过商品详情页查看相关商品标签中文翻译或联系客服。</li>
+						<li class="li-text">根据相关法律政策，您选购的跨境商品仅限个人自用，不得进行再次销售。</li>
+						<li class="li-text">您购买的跨境商品符合原产地有关质量、安全、卫生、环保、标识等标准或技术规范要求，可能与我国标准有所不同，由此可能产生的危害、损失或者其他风险，将由您自行承担。</li>
+						<li class="li-text">考拉海购为平台经营者，商品均由商家向您提供，由其承担商品质量安全保证责任。</li>
+					</ol>
+					<p class="p-text p-text-2">考拉海购精选全球好货，严控每一个环节，为顾客提供正品保障。</p>
+					<p class="p-text p-text-2 p-text-btm">谢谢！</p>
+				</div>
+			</div>
+			<div class="packdate">
+				<img src="image/detail/85ccc285-68de-480b-add5-bba3ebfdd841T1909051958_710_452.jpg" alt="">
+			</div>
+		</div>
+		<!-- 用户评价-->
+		<div id="userRating">
+			<div class="commentinfo">
+				<div class="m-rateinfo">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<img src="image/detail/wujiaoxing.png" alt="">
+					<strong>97.7</strong>
+					<span>%好评</span>
+				</div>
+				<div class="givenbean">
+					<p>评价送考拉豆</p>
+					<p>精华评价可获得40考拉豆</p>
+					<a href="">发表评价</a>
+					<p class="line">|</p>
+					<a href="">考拉豆说明</a>
+				</div>
+			</div>
+			<ul class="rate qingchu">
+				<div class="j-commenttablist">
+					<li class="j-tab">
+						<a class="j-tab-a j-tab-a1" href=""></a>
+						<a class="j-tab-a2 j-active" href="">全部 165271</a>
+					</li>
+					<li class="j-tab">
+						<a class="j-tab-a" href=""></a>
+						<a class="j-tab-a2" href="">有图 15230</a>
+					</li>
+					<li class="j-tab">
+						<a class="j-tab-a" href=""></a>
+						<a class="j-tab-a2" href="">有追评 2232</a>
+					</li>
+				</div>
+				<li class="j-content last">
+					<a class="reviewComment" href=""></a>
+					<span>只看当前商品评价</span>
+					<a class="f-hkdn" href="">查看所有评价</a>
+				</li>
+			</ul>
+			<div class="commWrap">
+				<div class="eachInfo qingchu">
+					<img class="avatar" src="image/detail/e5bc6bd8-4ad9-41df-82df-7630be4825c4.png" alt="">
+					<ul class="commItem">
+						<li class="commTtemtop">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+						</li>
+						<li class="itemDetail">
+							<label for="">精华评价</label>
+							心头挚爱，芙丽芳丝氨基酸洗面奶，主要原因就是它实在太温和了。 关于气味，我个人觉得是淘米水味，有些人觉得是椰奶味，不是特别刺激，浓郁的那种味道，但是淡淡的味道却让我印象深刻。 这只洗面奶起泡中举中规，不算太丰富，质地细腻，用在脸上不油腻，特别的清爽。清洁力度的话，我是靠它洗去防晒安耐晒，卸妆还是靠卸妆水。这款洗面奶属于弱酸性，容易清洗，洗后不紧绷，在氨基酸洗面奶中，它也算的上是独树一帜的存在。
+							洗面奶因为停留在脸上的时间短，所以我也不深究成分，但是烟酰胺这个成分我依旧力挺，想要美白，就要靠烟酰胺，这是我的个人经验。 总结，敏感肌推荐入，学生党吃一吃土，100也可以入一只。
+						</li>
+						<img src="image/detail/201906212238440000acfd8aa740e987dbdb7417d00809.jpeg" alt="">
+					</ul>
+					<div class="commItem-1">
+						<a href="">
+							<img src="image/detail/zan.png" alt=""> 44
+						</a>
+						<p class="commItem-p">来自Android手机版</p>
+						<p>06.21</p>
+					</div>
+				</div>
+			</div>
+			<div class="commWrap">
+				<div class="eachInfo qingchu">
+					<img class="avatar" src="image/detail/e5bc6bd8-4ad9-41df-82df-7630be4825c4.png" alt="">
+					<ul class="commItem">
+						<li class="commTtemtop">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+						</li>
+						<li class="itemDetail">
+							<label for="">精华评价</label>
+							超级喜欢，第三支已经快空了，打算在囤几支，我是油皮，总爱起痘，用了之后不说立竿见影，但是有很大改善，给我男朋友用了也说很好用，作为学生党这个价位可能比其它的洗面奶有点贵了，希望价钱上优惠一些吧！😜这一款是敏感肌也可以用的氨基酸洗面奶，其实有些洗面奶说是氨基酸洗面奶，其实是皂基，或者是加那么一点点氨基酸，不管用的，不适合自己肤质的话会烂脸的，但是氨基酸是适合所有肤质的哦！最后，赞一下快递小哥哥😁
+						</li>
+						<img src="image/detail/20190717190034261490ea1cf94b76b73ea56ace0e785b.jpeg" alt="">
+					</ul>
+					<div class="commItem-1">
+						<a href="">
+							<img src="image/detail/zan.png" alt=""> 41
+						</a>
+						<p class="commItem-p">来自Android手机版</p>
+						<p>07.17</p>
+					</div>
+				</div>
+			</div>
+			<div class="commWrap">
+				<div class="eachInfo qingchu">
+					<img class="avatar" src="image/detail/201907032058352103ecc46c4545b1ad2f3ca6aaf54b36.jpeg" alt="">
+					<ul class="commItem">
+						<li class="commTtemtop">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+						</li>
+						<li class="itemDetail">
+							<label for="">精华评价</label>
+							心头挚爱，芙丽芳丝氨基酸洗面奶，主要原因就是它实在是太温和了。 关于气味，我个人觉得是淘米水味，有些人觉得是椰奶味，不是特别刺激，浓郁的那种味道，但是淡淡的味道让人印象深刻。 这款洗面奶起泡中举中规，不算太丰富，质地细腻，用在脸上不油腻，特别的清爽，这款洗面奶属于弱酸性，很容易清洗，洗后不紧绷，在氨基酸洗面奶中，它也算是独树一帜的存在。
+							总结，敏感肌 干皮 推荐入手。
+						</li>
+						<img src="image/detail/201907151546368a492193ca6a46479a642380f7ac8b21.jpeg" alt="">
+					</ul>
+					<div class="commItem-1">
+						<a href="">
+							<img src="image/detail/zan.png" alt=""> 13
+						</a>
+						<p class="commItem-p">来自Android手机版</p>
+						<p>04.07</p>
+					</div>
+				</div>
+			</div>
+			<div class="commWrap">
+				<div class="eachInfo qingchu">
+					<img class="avatar" src="image/detail/e5bc6bd8-4ad9-41df-82df-7630be4825c4.png" alt="">
+					<ul class="commItem">
+						<li class="commTtemtop">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+						</li>
+						<li class="itemDetail">
+							<label for="">精华评价</label>
+							1.前言 首先，反对珍珠粉敷脸美白，牛奶敷脸美白等民科美白法。与其说是它们让皮肤变白，不如说是敷完后洗脸，角质层含水量增加导致看起来变白了。 第二，皮肤色素含量主要由基因决定，若是不考虑皮肤血管分布色素分布，理论上人最白的部位是大腿内侧皮肤。但由于脸部皮脂氧化和血管分布等因素，很多人面部色素会较深，基本上很难达到白到发光这种情况。当然，白种人或者少部分基因逆天的黄种人当然可以，但是基本上会关注美白话题的人都不是。
+							第三，后天影响肤色关键因素第一是紫外线，其次是年龄、饮食习惯、日常作息和运动等。 因此，不谈防晒的美白都是耍流氓，不谈防晒的美白都是耍流氓，不谈防晒的美白都是耍流氓!
+						</li>
+						<img src="image/detail/201904071200094238e8657c2943f89174965839cfd039.jpeg" alt="">
+					</ul>
+					<div class="commItem-1">
+						<a href="">
+							<img src="image/detail/zan.png" alt=""> 105
+						</a>
+						<p class="commItem-p">来自Android手机版</p>
+						<p>04.07</p>
+					</div>
+				</div>
+			</div>
+			<div class="commWrap">
+				<div class="eachInfo qingchu">
+					<img class="avatar" src="image/detail/20190507030348335dc1a7d9824c33bc7e2bb93b928a04.jpeg" alt="">
+					<ul class="commItem">
+						<li class="commTtemtop">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+							<img src="image/detail/wujiaoxing.png" alt="">
+						</li>
+						<li class="itemDetail">
+							<label for="">精华评价</label>
+							敲喜欢这款洗面奶！味道是有一点点不好闻，但是温和，第一天用的时候我的脸是有点疼的，听说这款很温和很修护就剁手了，买来后就真的没有这种症状了！之前我用什么洗面奶脸都会有些痒痒的，这个真的是没有感觉！并且后续护肤拍打按压再也不会刺刺的疼！！终于找到了我梦中的那只痘肌，敏感肌还＋大油皮的洗面奶嘤嘤嘤！又要温和
+							又要清洁，又得祛痘镇痘！！！容我先给芙芙跪一个(ुŏ̥̥̥̥םŏ̥̥̥̥) ु爱你三千遍
+						</li>
+						<img class="eachInfo-img" src="image/detail/20190617085723126e25ded3984a04ae1537ddc4338d8d.jpeg" alt="">
+						<img src="image/detail/2019061708572298fc4b114b394b14b5b909ebbd03211b.jpeg" alt="">
+					</ul>
+					<div class="commItem-1">
+						<a href="">
+							<img src="image/detail/zan.png" alt=""> 105
+						</a>
+						<p class="commItem-p">来自Android手机版</p>
+						<p>04.07</p>
+					</div>
+				</div>
+			</div>
+			<!-- 翻页功能-->
+			<div id="pageNav">
+				<div class="m-centerpager">
+					<ul class="m-commentpager">
+						<li class="pageprv">
+							<a class="prv-a" href="">
+								<<上一页</a>
+						</li>
+						<li class="pageprv disabled">
+							<a href="">1</a>
+						</li>
+						<li class="pageprv disabled">
+							<a href="">2</a>
+						</li>
+						<li class="pageprv disabled">
+							<a href="">3</a>
+						</li>
+						<li class="pageprv disabled">
+							<a href="">4</a>
+						</li>
+						<li class="pageprv">
+							<a href="">下一页>></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--猜你喜欢--区域-->
+		<div class="newRecomTitle">
+			猜你喜欢
+			<span>根据你的浏览记录推荐的商品</span>
+		</div>
+		<div class="m-reclst">
+			<div class="newRecom-img">
+				<img src="image/shopcar/55bac40da2d5498681b8409a6e00908e1550028581348js2mzvtb11082.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">ESTĒE LAUDER 雅诗兰黛小棕
+						<br>瓶面部精华 特润修护肌透精华露 </p>
+					<p class="newRecom-p2">
+						¥545
+						<span class="newRecom-span">¥850</span>
+					</p>
+					<p class="newRecom-p3">41438 人已评价</p>
+				</div>
+			</div>
+			<div class="newRecom-img">
+				<img src="image/shopcar/91f78e97c50b4d7d8d1c62cfc2c771f31556072739743juulj6a110397.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">LANCÔME 兰蔻 玫瑰露清滢柔肤
+						<br>粉水 400毫升 干皮真爱</p>
+					<p class="newRecom-p2">
+						¥339
+						<span class="newRecom-span">¥420</span>
+					</p>
+					<p class="newRecom-p3">45685 人已评价</p>
+				</div>
+			</div>
+			<div class="newRecom-img">
+				<img src="image/shopcar/08a0597d-c18c-4042-b11a-893fcdfa29e8.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">意大利KIKO新版丰盈滋养小黑管
+						<br>4系口红女唇膏3g 407/414/416//</p>
+					<p class="newRecom-p2">
+						¥29
+						<span class="newRecom-span">¥99</span>
+					</p>
+					<p class="newRecom-p3">680 人已评价</p>
+				</div>
+			</div>
+			<div class="newRecom-img">
+				<img src="image/shopcar/6681a05f54494d40ac50bb8885608a9a1550039667495js2tlhxs11058.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">【张柏芝同款】BIODERMA 贝
+						<br>德玛 舒妍温和保湿卸妆水粉水 5</p>
+					<p class="newRecom-p2">
+						¥119
+						<span class="newRecom-span">¥225</span>
+					</p>
+					<p class="newRecom-p3">111682 人已评价</p>
+				</div>
+			</div>
+		</div>
+		<!--大家都在买--区域-->
+		<div class="newRecomTitle btmRecomTitle">
+			大家都在买
+			<span>全网最热门的商品推荐</span>
+		</div>
+		<div class="m-reclst m-reclst-btm">
+			<div class="newRecom-img">
+				<img src="image/shopcar/050c40dcedef464fb4ea7ebbabb9109a1556531761047jv26tldv11106.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">【轻薄透亮】Sulwhasoo 雪花秀
+						<br>致美养肤气垫 15克+15克替换装</p>
+					<p class="newRecom-p2">
+						¥249
+						<span class="newRecom-span">¥385</span>
+					</p>
+					<p class="newRecom-p3">12645 人已评价</p>
+				</div>
+			</div>
+			<div class="newRecom-img">
+				<img src="image/shopcar/64b13d8575b94d029bdcaf21c130b3291563521484196jy9sbma110338.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">【14色可选】Kao 花王旗下 Liese
+						<br>莉婕 泡沫染发膏 108毫升</p>
+					<p class="newRecom-p2">
+						¥55
+						<span class="newRecom-span">¥89</span>
+					</p>
+					<p class="newRecom-p3">39188 人已评价</p>
+				</div>
+			</div>
+			<div class="newRecom-img">
+				<img src="image/shopcar/debf6582119643f192879665a8f4310a1557194808989jvd5l0g310098.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">su:m37º 呼吸 惊喜水分系列礼盒</p>
+					<p class="newRecom-p2">
+						¥568
+						<span class="newRecom-span">¥918</span>
+					</p>
+					<p class="newRecom-p3">11909 人已评价</p>
+				</div>
+			</div>
+			<div class="newRecom-img">
+				<img src="image/shopcar/ee8462b2ef1742cd96ad38e1343c43df1561970261376jxk4rj3g10319.jpg" alt="">
+				<div class="newRecom-content">
+					<p class="newRecom-p1">ESTĒE LAUDER 雅诗兰黛 特润
+						<br>修护精华眼霜 小棕瓶“抗蓝光”眼</p>
+					<p class="newRecom-p2">
+						¥409
+						<span class="newRecom-span">¥510</span>
+					</p>
+					<p class="newRecom-p3">15458 人已评价</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/detail.js"></script> 
+</body>
+</html>
